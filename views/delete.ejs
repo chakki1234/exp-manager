@@ -1,0 +1,35 @@
+<% include ./partials/header2.ejs %>
+
+
+<% if(user.expenses.length>0) { %>
+<<div id="mainbx">
+
+<div id="logintg">
+  Delete
+<div>
+
+<div id="formbx">
+
+<form action="/delete" method="POST">
+  <div class="form-group">
+    <label for="inputtitle">Title</label>
+    <input type="text" class="form-control" id="inputtitle" placeholder="Title" name="title" required>
+  </div>
+
+
+  <button type="submit"  id="submitbtn" class="btn btn-primary btn-lg mt-4">Submit</button>
+</form>
+
+</div>
+
+</div>
+
+<% } else { %>
+
+<div class="alert alert-warning container mt-5" id="warningmsg"  role="alert">
+ Nothing here to delete
+</div>
+
+<% } %>
+
+<% include ./partials/footer.ejs %>

@@ -1,0 +1,510 @@
+#navbar{
+	color: white;
+	font-family: font-family: 'Actor', sans-serif;
+	
+}
+
+#home{
+	position: relative;
+	left: -19%;
+}
+
+#login{
+	position: relative;
+	left: -37%;
+}
+
+#brand{
+	font-size: 2rem;
+}
+
+#image{
+	background-image: url("https://images.unsplash.com/photo-1481246516418-7250f352b06f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#heading{
+
+	font-family: font-family: 'Actor', sans-serif;
+	font-size: 4rem;
+	position: absolute;
+	left: 35%;
+	top: 40%;
+}
+
+#box{
+	opacity: 0.4;
+	width: 30%;
+	height: 10%;
+	position: absolute;
+	left: 34%;
+	top: 40%;
+	background-color: white;
+	border: 4px solid #232323;
+}
+
+#getst{
+	color: white;
+	position: absolute;
+	left: 45%;
+	top: 52%;
+
+}
+
+#inputusername{
+	width: 100%;  /*doubt*/
+	border: 2px solid #232323;
+}
+
+#inputpassword{
+	width: 100%;
+    border: 2px solid #232323;
+ }
+
+#logoutbtn{
+	position: absolute;
+	left: 77%;
+	top: 25%;
+	color: white;
+}
+
+#mainbx{
+	position: absolute;
+	left: 35%;
+	top: 20%;
+	width: 30%;
+	height: 50%;
+    border: 4px solid #232323;
+    background-color:#e4efd5;
+}
+
+#logintg{
+	font-size: 3rem;
+	position: relative;
+	left: 35%;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#formbx{
+	position: absolute;
+	top: 100px;
+	left: -30%;
+}
+
+#home1{
+	position: relative;
+	left: -19%;
+}
+
+#home{
+   position: relative;
+   left: -7%;
+}
+
+#add{
+	position: relative;
+    left: -13%;
+}
+
+#view{
+	position: relative;
+	left: -17%;
+}
+
+#delete{
+	position: relative;
+	left: -21%;
+}
+
+#addmnbx{
+	position: absolute;
+	left: 35%;
+	top: 20%;
+    border: 4px solid #232323;
+    background-color: #e4efd5;
+    width: 30%;
+    height: 70%;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+#addtitle{
+	position: relative;
+	left: 10%;
+	font-size: 4rem;
+}
+
+#formtitle{
+	width:40%;
+	border: 2px solid #232323;
+}
+
+#formdescription{
+	width: 40%;
+	border: 2px solid #232323;
+}
+
+#formamount{
+	width: 40%;
+    border: 2px solid #232323;
+}
+
+#formtitletag{
+	font-size: 2rem;
+}
+
+#formdescriptiontag{
+	font-size: 2rem;
+}
+
+#formamounttag{
+	font-size: 2rem;
+}
+
+#formmoneysp{
+	position: absolute;
+	top: 36%;
+	left: 60%; 
+}
+
+#salaryupdate{
+	position: absolute;
+	top: 38%;
+	left: 60%;
+}
+
+#warningmsg{
+	text-align: center;
+} 
+
+#click{
+	color: red;
+}
+
+#errmsg{
+	display: none;
+}
+
+@media screen and (max-width: 1696px){
+
+#logoutbtn{
+	position: absolute;
+	left: 70%;
+	top: 25%;
+	color: white;
+}
+#home1{
+
+left: -15%
+}
+#login{
+position: relative;
+left: -28%;
+}
+
+}
+
+@media screen and (max-width: 1530px)
+{
+	#addtitle{
+		font-size: 3rem;
+	}
+}
+@media screen and (max-width: 1288px){
+
+#logoutbtn{
+	position: absolute;
+	left: 65%;
+	top: 25%;
+	color: white;
+}
+
+#home1{
+	font-size: 1rem;
+}
+
+#login{
+	font-size: 1rem;
+}
+
+
+	#addtitle{
+		font-size: 2.5rem;
+	}
+
+#add{
+	position: relative;
+    left: -12%;
+ 	font-size: 0.8rem;
+}
+
+#view{
+	position: relative;
+	left: -17%;
+	font-size: 0.8rem;
+}
+
+#delete{
+	position: relative;
+	left: -21%;
+	font-size: 0.8rem;
+}
+
+}
+@media screen and (max-width: 1304px)
+{
+	#home{
+   position: relative;
+   left: -7%;
+   font-size: 1rem;
+}
+
+#add{
+	position: relative;
+    left: -12%;
+ 	font-size: 1rem;
+}
+
+#view{
+	position: relative;
+	left: -17%;
+	font-size: 1rem;
+}
+
+#delete{
+	position: relative;
+	left: -21%;
+	font-size: 1rem;
+}
+
+#logoutbtn{
+	position: absolute;
+	left: 65%;
+	top: 33%;
+	color: white;
+	font-size: 1rem;
+}
+
+#brand{
+	font-size: 1.5rem;
+}
+
+}
+
+@media screen and (max-width: 1074px)
+{
+		#addtitle{
+		font-size: 2rem;
+	}
+
+#formtitletag{
+	font-size: 1.5rem;
+}
+
+#formdescriptiontag{
+	font-size: 1.5rem;
+}
+
+#formamounttag{
+	font-size: 1.5rem;
+}
+
+#logoutbtn{
+	position: absolute;
+	left: 60%;
+	top: 33%;
+	color: white;
+	font-size: 0.7rem;
+}
+#brand{
+	font-size: 1.2rem;
+}
+
+#home{
+   position: relative;
+   left: -7%;
+   font-size: 0.7rem;
+}
+
+#add{
+	position: relative;
+    left: -12%;
+ 	font-size: 0.7rem;
+}
+
+#view{
+	position: relative;
+	left: -17%;
+	font-size: 0.7rem;
+}
+
+#delete{
+	position: relative;
+	left: -21%;
+	font-size: 0.7rem;
+}
+
+#home1{
+	font-size: 0.8rem;
+}
+
+#login{
+	font-size: 0.8rem;
+}
+
+}
+
+@media screen and (max-width: 950px)
+{
+
+	#brand{
+       font-size: 1rem;
+	}
+
+	#dashele{
+
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 914px){
+
+	#brand{
+		font-size: 0.8rem;
+	}
+
+
+}
+
+@media screen and (max-width: 902px){
+	#logoutbtn{
+	position: absolute;
+	left: 55%;
+	top: 33%;
+	color: white;
+	font-size: 0.7rem;
+}
+#brand{
+	font-size: 1.2rem;
+}
+
+#home{
+   position: relative;
+   left: -2%;
+   font-size: 0.7rem;
+}
+
+#add{
+	position: relative;
+    left: -7%;
+ 	font-size: 0.7rem;
+}
+
+#view{
+	position: relative;
+	left: -12%;
+	font-size: 0.7rem;
+}
+
+#delete{
+	position: relative;
+	left: -17%;
+	font-size: 0.7rem;
+}
+    
+}
+
+@media screen and (max-height: 800px){
+
+	#heading{
+		font-size: 3.75rem;
+		top: 38.5%
+	}
+}
+@media screen and (max-width: 1722px){
+
+		#heading{
+		font-size: 3.5rem;
+		top: 39%
+	}
+}
+
+@media screen and (max-width: 1592px){
+
+		#heading{
+		font-size: 3rem;
+		top: 39%
+	}
+
+}
+
+
+@media screen and (max-width: 1398px){
+
+		#heading{
+		font-size: 2.5rem;
+		left: 37%;
+		top: 40%;
+	}
+	
+}
+
+@media screen and (max-width: 1398px){
+
+		#heading{
+		font-size: 2.5rem;
+		left: 35.5%;
+		top: 40%;
+	}
+	
+}
+@media screen and (max-width: 1180px)
+{
+	#heading
+	{
+		font-size: 2rem;
+		left: 36.5%;
+		top: 41%;
+	}
+
+	#getst{
+	color: white;
+	position: absolute;
+	left: 42%;
+	top: 52%;
+
+}
+#brand{
+	font-size: 1.3rem;
+}
+
+#home1{
+
+left: -10%
+}
+#login{
+position: relative;
+left: -22%;
+}
+
+
+
+}
+
+
+@media screen and (max-width: 988px){
+	#heading
+	{
+		font-size: 1.5rem;
+		left: 38%;
+		top: 42%;
+	}
+#home1{
+	left: -12%;
+}
+#brand{
+	font-size: 1.25rem;
+}
+
+}

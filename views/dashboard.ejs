@@ -1,0 +1,49 @@
+<% include ./partials/header2.ejs %>
+
+<div class="jumbotron mt-5 container">
+  <h1 class="display-4">Hello!</h1>
+  <p class="lead" id="dashele">This is a simple way to manage your expenses.</p>
+  <hr class="my-4">
+  <p>Track your expenses and save money.</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+
+<% if(user.moneysp ) { %>
+
+<button type="button" id="salaryupdate" class="btn btn-primary">
+  Balance  <span class="badge badge-light"><i class="fas fa-rupee-sign"></i><%= user.balance %></span>
+</button>
+
+<% } else { %>
+
+<form action="/dashboard" method="POST" id="formmoneysp">
+    <div class="form-group">
+    <label for="inputmoneysp">Salary</label>
+    <input type="number" class="form-control" id="inputmoneysp" placeholder="Salary" name="moneysp">
+    </div>
+    <button type="submit"  id="submitbtnform" class="btn btn-primary btn-lg mt-1">Submit</button>
+    <span class="btn btn-lg btn-danger" id="errmsg"></span>
+    </form>
+
+<% } %>
+
+</div>
+  
+<script>
+
+var  inputmoneysp = document.querySelector("#inputmoneysp");
+var errmsg = document.querySelector("#errmsg");
+
+inputmoneysp.addEventListener("keyup", function(){
+	if(this.value<0)
+	{
+	errmsg.style.display = "inline";
+    errmsg.textContent = "Are u serious ?"
+    }
+    if(this.value>=0 || this.value=="")
+    errmsg.style.display = "none";
+   	
+});
+
+</script>
+
+<% include ./partials/footer.ejs %>

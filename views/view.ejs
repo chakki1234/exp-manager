@@ -1,0 +1,40 @@
+<% include ./partials/header2.ejs %>
+
+
+<% if(user.expenses.length==0) { %>
+<div class="alert alert-warning container mt-5" id="warningmsg"  role="alert">
+ Money is to be spent but spend it wisely
+</div>
+
+<%  } else { %>
+
+<div class="container">
+<table class="table mt-5">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">Description</th>
+      <th scope="col">Amount</th>
+    </tr>
+  </thead>
+  <% for(var i=0; i<user.expenses.length; ++i){ %>
+ <tr>
+      <th scope="row"><%= i+1 %></th>
+      <td><%= user.expenses[i].title %></td>
+      <td><%= user.expenses[i].description %></td>
+      <td><%= user.expenses[i].amount %></td>
+ </tr>
+
+  <% } %>
+
+<tbody class="thead-dark">
+  <tr>
+      <th scope="row">#</th>
+      <th scope="row">Balance :  <%= user.balance %></td>
+ </tr>
+ </tbody>
+  
+<% } %>
+
+<% include ./partials/footer.ejs %>

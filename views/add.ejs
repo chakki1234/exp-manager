@@ -1,0 +1,38 @@
+<% include ./partials/header2.ejs %>
+
+<% if(user.moneysp==undefined) { %>
+
+<div class="alert alert-warning container mt-5" id="warningmsg"  role="alert">
+ Please enter your salary
+</div>
+
+<% } else if(user.balance==0) { %>
+ 
+<div class="alert alert-warning container mt-5" id="warningmsg"  role="alert">
+ I guess you ran out of money. <a id="click" href="/addmoney">Click here to start fresh</a> 
+</div>
+
+<% } else { %>
+
+<div id="addmnbx">
+<span id="addtitle">ADD YOUR EXPENSEs</span> 
+<form  action="/add" method="POST"  id="formadd">
+  <div class="form-group">
+    <label for="formtitle"class="ml-2" id="formtitletag">Title</label>
+    <input type="text"  name="title"class="form-control ml-2" id="formtitle" required>
+  </div>
+  <div class="form-group">
+    <label for="formtextarea" class="ml-2" id="formdescriptiontag">Description</label>
+    <textarea name="description" class="form-control" id="formtextarea" rows="3" cols="1" placeholder="Description" required ></textarea>
+  </div>
+  <div class="form-group">
+    <label for="formamount"  class="ml-2"  id="formamounttag">Amount</label>
+    <input name="amount" type="number" class="form-control  ml-2" id="formamount" required></input>
+  </div>
+  <button type="submit" class="btn btn-info btn-lg ml-2 mt-4">Submit</button>
+</form>
+</div>
+
+<% } %>
+
+<% include ./partials/footer.ejs %> 
