@@ -26,6 +26,14 @@
 
 <% } %>
 
+<% if(notify) { %>
+
+<a href = "/notify/<%= user._id %>"type="button" id="notbtn" class="btn btn-primary">
+  Notifications <span class="badge badge-light"><%= notify %></span>
+</a>
+    
+<% } %>
+
 </div>
   
 <script>

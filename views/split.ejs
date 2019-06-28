@@ -1,0 +1,39 @@
+<% include ./partials/header2.ejs %>
+
+
+
+<div id="mainbx2">
+
+<div id="logintg">
+  SplitApp
+<div>
+
+<div id="formbx">
+
+<form action="/split" method="POST">
+  <div class="form-group id">
+    <label for="inputusername">Number of people to split with</label>
+    <input type="number" class="form-control" id="inputusername" placeholder="No of dividers"  name="nom" required>
+  </div>
+
+<div class="form-group">
+    <label for="inputpassword">Description</label>
+    <input type="text" class="form-control" id="inputpassword" placeholder="Description" name="description" required>
+  </div>
+  
+  <div class="form-group">
+    <label for="inputpassword">Amount</label>
+    <input type="number" class="form-control" id="inputamount" placeholder="Amount" name="amount" required>
+  </div>
+  
+  <button type="submit"  id="submitbtn" class="btn btn-primary btn-lg mt-3">Submit</button>
+</form>
+
+</div>
+
+</div>
+</div>
+
+
+
+<% include ./partials/footer.ejs %>

@@ -4,6 +4,7 @@
 	
 }
 
+
 #home{
 	position: relative;
 	left: -19%;
@@ -55,11 +56,16 @@
 }
 
 #inputusername{
-	width: 100%;  /*doubt*/
+	width: 100%;  
 	border: 2px solid #232323;
 }
 
 #inputpassword{
+	width: 100%;
+    border: 2px solid #232323;
+ }
+
+ #inputamount{
 	width: 100%;
     border: 2px solid #232323;
  }
@@ -77,6 +83,16 @@
 	top: 20%;
 	width: 30%;
 	height: 50%;
+    border: 4px solid #232323;
+    background-color:#e4efd5;
+}
+
+#mainbx2{
+	position: absolute;
+	left: 35%;
+	top: 20%;
+	width: 30%;
+	height: 65%;
     border: 4px solid #232323;
     background-color:#e4efd5;
 }
@@ -184,6 +200,14 @@
 
 #errmsg{
 	display: none;
+}
+
+#cardblock{
+	background-color: #e4efd5; 
+}
+
+#notbtn{
+	color: white;
 }
 
 @media screen and (max-width: 1696px){
@@ -473,8 +497,8 @@ left: -28%;
 	position: absolute;
 	left: 42%;
 	top: 52%;
-
 }
+
 #brand{
 	font-size: 1.3rem;
 }
@@ -483,6 +507,7 @@ left: -28%;
 
 left: -10%
 }
+
 #login{
 position: relative;
 left: -22%;

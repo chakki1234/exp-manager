@@ -1,0 +1,23 @@
+<% include ./partials/header2.ejs %>
+
+
+<div class="alert alert-success container d-flex justify-content-around align-items-center mt-5" role="alert">
+  Please  verify the details and fill in the receipients email to send the request you will be redirected to the dashboard after this is done .      
+</div>
+`
+<div class = "container d-flex flex-row justify-content-center">
+
+ <div class="card col-4 border border-dark " id="cardblock"  style="width: 18rem;">
+  <div class="card-body">
+  <form method="POST" action="/addusr/<%= body._id %>">
+    <span class="card-title "><input type="text" placeholder="Email Id" name="username"></span>
+    <h6 class="card-subtitle mt-2 text-muted">-by <%= user.username %></h6>
+    <p class="card-text">I request you to settle the amount we spent on <%= body.description %>.The amount adds upto <%= body.iamount %>.</p>
+
+    <button type="submit" class="btn btn-info" id="subbtn" > Submit </button>
+    </form>
+  </div>
+</div>
+</div>
+
+<% include ./partials/footer.ejs %>

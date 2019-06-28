@@ -10,7 +10,20 @@ var UserSchema = new mongoose.Schema({
   expenses: [{
   	       type: mongoose.Schema.Types.ObjectId,
   	       ref: "Expense"
+  }],
+  requests: [
+  {
+  	type: mongoose.Schema.Types.ObjectId,
+  	ref: "Request"
+  }
+  ],
+
+  requested:[
+  {
+  	 type: mongoose.Schema.Types.ObjectId,
+  	 ref:"Requested"
   }]
+
 
  });
 

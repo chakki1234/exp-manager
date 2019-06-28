@@ -1,0 +1,26 @@
+<% include ./partials/header2.ejs %>
+
+<div class="container">
+<table class="table mt-5">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Requested Username </th>
+      <th scope="col">Amount to be paid </th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>
+ 
+  <% for(var i=0; i< user.requested.length ; ++i){ %>
+ <tr>
+      <th scope="row"><%= i+1 %></th>
+      <td><%= user.requested[i].rusername %></td>
+      <td><%= user.requested[i].iamountp %></td>
+      <td><%= user.requested[i].status %></td>
+ </tr>
+
+  <% } %>
+
+  
+
+<% include ./partials/footer.ejs %>
