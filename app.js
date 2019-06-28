@@ -287,7 +287,7 @@ Usr.create({
          foundimpuser.save();
      	});
      });
-    if(found.render<found.divison){
+    if(found.render<(found.divison-1)){
         rt = found.render;
         title = "Split";
         found.render= rt + 1;
